@@ -1,3 +1,3 @@
 # digisheet
 
-A little website that let you upload your own image to track your digimon evolutions in a RPG campaign.
+A little website where you can upload your own images to track your digimon evolutions in a RPG campaign.
