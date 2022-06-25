@@ -22,11 +22,18 @@
     background-color: yellow;
 }
 
+.armorEvo {
+    font-family: 'Orbitron';
+    color: aliceblue;
+    font-weight: bolder;
+    background: black;
+}
+
 .digisplay {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1px;
+    gap: 3px;
 }
 
 .container {
@@ -39,11 +46,70 @@
 .digi_img {
     width: 375px;
     height: 320px;
-    border: 1px solid black;
     background-position: center;
     background-size: cover;
     color: black;
     font-size: 30px;
     font-weight: bolder;
     font-family: 'Orbitron', sans-serif;
+}
+
+.primeraEtapa {
+    border: 4px solid gray;
+}
+
+.evoNormal {
+    border: 4px solid cornflowerblue;
+}
+
+.evoOscura {
+    border: 4px solid red;
+}
+
+.evoAlterna {
+    border: 4px solid yellow;
+}
+
+.coraje {
+    border: 4px solid red;
+}
+
+.amistad {
+    border: 4px solid blue;
+}
+
+.amor {
+    border: 4px solid gainsboro;
+}
+
+.pureza {
+    border: 4px solid greenyellow;
+}
+
+.conocimiento {
+    border: 4px solid orange;
+}
+
+.sinceridad {
+    border: 4px solid purple;
+}
+
+.esperanza {
+    border: 4px solid salmon;
+}
+
+.luz {
+    border: 4px solid lightsteelblue;
+}
+
+.solidaridad {
+    border: 4px solid pink;
+}
+
+.milagros {
+    border: 4px solid goldenrod;
+}
+
+.destino {
+    border: 4px solid gold;
 }
