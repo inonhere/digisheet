@@ -24,11 +24,23 @@ const digiB8 = document.querySelector('#digiB8')
 const digiB9 = document.querySelector('#digiB9')
 const digiB10 = document.querySelector('#digiB10')
 const digiB11 = document.querySelector('#digiB11')
+const intento = document.querySelectorAll('input')
 var upload = "";
 
 function oscuridad() {
     var cambio = document.body;
     cambio.classList.toggle("dark-mode");
+}
+
+function intentoDeOcultar() {
+for (const intent of intento) {
+    intent.classList.add('ocultito')
+}}
+
+function intentoDeMostrar() {
+    for (const intenti of intento) {
+        intenti.classList.remove('ocultito')
+    }
 }
 
 baby.addEventListener('change', function(){

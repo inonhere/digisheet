@@ -3,6 +3,10 @@
     background-color: black;
 }
 
+.ocultito {
+    display: none;
+}
+
 .firstStage {
     font-weight: bold;
     font-family: 'Orbitron';
