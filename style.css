@@ -1,3 +1,8 @@
+
+.dark-mode {
+    background-color: black;
+}
+
 .firstStage {
     font-weight: bold;
     font-family: 'Orbitron';
@@ -27,6 +32,14 @@
     color: aliceblue;
     font-weight: bolder;
     background: black;
+}
+
+.pitulo {
+    font-size: 40px;
+    background: rgb(27, 109, 168);
+    font-weight: bolder;
+    font-family: 'Orbitron';
+    color: rgb( 254, 219, 97);
 }
 
 .digisplay {
@@ -113,3 +126,4 @@
 .destino {
     border: 4px solid gold;
 }
+

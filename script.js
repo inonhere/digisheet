@@ -26,6 +26,10 @@ const digiB10 = document.querySelector('#digiB10')
 const digiB11 = document.querySelector('#digiB11')
 var upload = "";
 
+function oscuridad() {
+    var cambio = document.body;
+    cambio.classList.toggle("dark-mode");
+}
 
 baby.addEventListener('change', function(){
     const lectura = new FileReader();
