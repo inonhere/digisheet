@@ -16,6 +16,12 @@
     background-color: red;
 }
 
+.alterEvo {
+    font-family: 'Orbitron';
+    font-weight: bold;
+    background-color: yellow;
+}
+
 .digisplay {
     display: flex;
     justify-content: center;

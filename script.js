@@ -9,7 +9,12 @@ const digiD = document.querySelector('#digiD');
 const digiD2 = document.querySelector('#digiD2');
 const digiD3 = document.querySelector('#digiD3');
 const digiD4 = document.querySelector('#digiD4');
+const digiA = document.querySelector('#digiA');
+const digiA2 = document.querySelector('#digiA2')
+const digiA3 = document.querySelector('#digiA3')
+const digiA4 = document.querySelector('#digiA4')
 var upload = "";
+
 
 baby.addEventListener('change', function(){
     const lectura = new FileReader();
@@ -28,7 +33,6 @@ baby2.addEventListener('change', function(){
     });
     lectura.readAsDataURL(this.files[0])
 })
-
 digi.addEventListener('change', function(){
     const lectura = new FileReader();
     lectura.addEventListener('load', ()  =>{
@@ -106,6 +110,42 @@ digiD4.addEventListener('change', function(){
     lectura.addEventListener('load', ()  =>{
         upload = lectura.result;
         document.querySelector('#displayDDigi4').style.backgroundImage = `url(${upload})`
+    });
+    lectura.readAsDataURL(this.files[0])
+})
+
+digiA.addEventListener('change', function(){
+    const lectura = new FileReader();
+    lectura.addEventListener('load', ()  =>{
+        upload = lectura.result;
+        document.querySelector('#displayADigi').style.backgroundImage = `url(${upload})`
+    });
+    lectura.readAsDataURL(this.files[0])
+})
+
+digiA2.addEventListener('change', function(){
+    const lectura = new FileReader();
+    lectura.addEventListener('load', ()  =>{
+        upload = lectura.result;
+        document.querySelector('#displayADigi2').style.backgroundImage = `url(${upload})`
+    });
+    lectura.readAsDataURL(this.files[0])
+})
+
+digiA3.addEventListener('change', function(){
+    const lectura = new FileReader();
+    lectura.addEventListener('load', ()  =>{
+        upload = lectura.result;
+        document.querySelector('#displayADigi3').style.backgroundImage = `url(${upload})`
+    });
+    lectura.readAsDataURL(this.files[0])
+})
+
+digiA4.addEventListener('change', function(){
+    const lectura = new FileReader();
+    lectura.addEventListener('load', ()  =>{
+        upload = lectura.result;
+        document.querySelector('#displayADigi4').style.backgroundImage = `url(${upload})`
     });
     lectura.readAsDataURL(this.files[0])
 })
