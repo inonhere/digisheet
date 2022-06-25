@@ -13,6 +13,17 @@ const digiA = document.querySelector('#digiA');
 const digiA2 = document.querySelector('#digiA2')
 const digiA3 = document.querySelector('#digiA3')
 const digiA4 = document.querySelector('#digiA4')
+const digiB = document.querySelector('#digiB')
+const digiB2 = document.querySelector('#digiB2')
+const digiB3 = document.querySelector('#digiB3')
+const digiB4 = document.querySelector('#digiB4')
+const digiB5 = document.querySelector('#digiB5')
+const digiB6 = document.querySelector('#digiB6')
+const digiB7 = document.querySelector('#digiB7')
+const digiB8 = document.querySelector('#digiB8')
+const digiB9 = document.querySelector('#digiB9')
+const digiB10 = document.querySelector('#digiB10')
+const digiB11 = document.querySelector('#digiB11')
 var upload = "";
 
 
@@ -149,4 +160,108 @@ digiA4.addEventListener('change', function(){
     });
     lectura.readAsDataURL(this.files[0])
 })
+
+digiB.addEventListener('change', function(){
+    const lectura = new FileReader();
+    lectura.addEventListener('load', ()  =>{
+        upload = lectura.result;
+        document.querySelector('#displayB').style.backgroundImage = `url(${upload})`
+    });
+    lectura.readAsDataURL(this.files[0])
+})
+
+digiB2.addEventListener('change', function(){
+    const lectura = new FileReader();
+    lectura.addEventListener('load', ()  =>{
+        upload = lectura.result;
+        document.querySelector('#displayB2').style.backgroundImage = `url(${upload})`
+    });
+    lectura.readAsDataURL(this.files[0])
+})
+
+digiB3.addEventListener('change', function(){
+    const lectura = new FileReader();
+    lectura.addEventListener('load', ()  =>{
+        upload = lectura.result;
+        document.querySelector('#displayB3').style.backgroundImage = `url(${upload})`
+    });
+    lectura.readAsDataURL(this.files[0])
+})
+
+digiB4.addEventListener('change', function(){
+    const lectura = new FileReader();
+    lectura.addEventListener('load', ()  =>{
+        upload = lectura.result;
+        document.querySelector('#displayB4').style.backgroundImage = `url(${upload})`
+    });
+    lectura.readAsDataURL(this.files[0])
+})
+
+digiB5.addEventListener('change', function(){
+    const lectura = new FileReader();
+    lectura.addEventListener('load', ()  =>{
+        upload = lectura.result;
+        document.querySelector('#displayB5').style.backgroundImage = `url(${upload})`
+    });
+    lectura.readAsDataURL(this.files[0])
+})
+
+digiB6.addEventListener('change', function(){
+    const lectura = new FileReader();
+    lectura.addEventListener('load', ()  =>{
+        upload = lectura.result;
+        document.querySelector('#displayB6').style.backgroundImage = `url(${upload})`
+    });
+    lectura.readAsDataURL(this.files[0])
+})
+
+digiB7.addEventListener('change', function(){
+    const lectura = new FileReader();
+    lectura.addEventListener('load', ()  =>{
+        upload = lectura.result;
+        document.querySelector('#displayB7').style.backgroundImage = `url(${upload})`
+    });
+    lectura.readAsDataURL(this.files[0])
+})
+
+digiB8.addEventListener('change', function(){
+    const lectura = new FileReader();
+    lectura.addEventListener('load', ()  =>{
+        upload = lectura.result;
+        document.querySelector('#displayB8').style.backgroundImage = `url(${upload})`
+    });
+    lectura.readAsDataURL(this.files[0])
+})
+
+digiB9.addEventListener('change', function(){
+    const lectura = new FileReader();
+    lectura.addEventListener('load', ()  =>{
+        upload = lectura.result;
+        document.querySelector('#displayB9').style.backgroundImage = `url(${upload})`
+    });
+    lectura.readAsDataURL(this.files[0])
+})
+
+digiB10.addEventListener('change', function(){
+    const lectura = new FileReader();
+    lectura.addEventListener('load', ()  =>{
+        upload = lectura.result;
+        document.querySelector('#displayB10').style.backgroundImage = `url(${upload})`
+    });
+    lectura.readAsDataURL(this.files[0])
+})
+
+digiB11.addEventListener('change', function(){
+    const lectura = new FileReader();
+    lectura.addEventListener('load', ()  =>{
+        upload = lectura.result;
+        document.querySelector('#displayB11').style.backgroundImage = `url(${upload})`
+    });
+    lectura.readAsDataURL(this.files[0])
+})
+
+
+
+
+
 
