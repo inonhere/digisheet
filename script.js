@@ -241,6 +241,25 @@ for (const intent of intento) {
     intent.classList.toggle('ocultito');
 }}
 
+function ocultarNormal(){
+    var cambio = document.querySelector('.normalEvo')
+    cambio.classList.toggle('ocultito')
+}
+
+function ocultarOscuro(){
+    var cambio = document.querySelector('.darkEvo')
+    cambio.classList.toggle('ocultito')
+}
+
+function ocultarAlterado(){
+    var cambio = document.querySelector('.alterEvo')
+    cambio.classList.toggle('ocultito')
+}
+
+function ocultarArmor(){
+    var cambio = document.querySelector('.armorEvo')
+    cambio.classList.toggle('ocultito')
+}
 
 baby.addEventListener('change', function(){
     const lectura = new FileReader();
