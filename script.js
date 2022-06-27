@@ -29,6 +29,7 @@ const mostrar = document.querySelectorAll('.bebes');
 const mostrarN = document.querySelectorAll('.viejos');
 const mostrarD = document.querySelectorAll('.oscurito');
 const mostrarA = document.querySelectorAll('.alterado');
+const mostrarE = document.querySelectorAll('.armadura')
 var upload = "";
 
 
@@ -120,6 +121,72 @@ function borrarT() {
     var a = document.querySelector('#displayADigi4');
     a.classList.remove('digi_img', 'evoAlterna');
     a.classList.add('ocultito');
+ }
+ 
+ function armorC() {
+    var a = document.querySelector('#displayB');
+    a.classList.remove('digi_img', 'armadura');
+    a.classList.add('ocultito');
+ } 
+
+ function armorF() {
+    var a = document.querySelector('#displayB2');
+    a.classList.remove('digi_img', 'armadura');
+    a.classList.add('ocultito');
+ } 
+
+ function armorL() {
+    var a = document.querySelector('#displayB3');
+    a.classList.remove('digi_img', 'armadura');
+    a.classList.add('ocultito');
+ }
+ 
+ function armorP() {
+    var a = document.querySelector('#displayB4');
+    a.classList.remove('digi_img', 'armadura');
+    a.classList.add('ocultito');
+ } 
+
+ function armorK() {
+    var a = document.querySelector('#displayB5');
+    a.classList.remove('digi_img', 'armadura');
+    a.classList.add('ocultito');
+ }
+ 
+ function armorS() {
+    var a = document.querySelector('#displayB6');
+    a.classList.remove('digi_img', 'armadura');
+    a.classList.add('ocultito');
+ } 
+
+ function armorH() {
+    var a = document.querySelector('#displayB7');
+    a.classList.remove('digi_img', 'armadura');
+    a.classList.add('ocultito');
+ }
+ 
+ function armorLi() {
+    var a = document.querySelector('#displayB8');
+    a.classList.remove('digi_img', 'armadura');
+    a.classList.add('ocultito');
+ }
+ 
+ function armorKi() {
+    var a = document.querySelector('#displayB9');
+    a.classList.remove('digi_img', 'armadura');
+    a.classList.add('ocultito');
+ }
+ 
+ function armorM() {
+    var a = document.querySelector('#displayB10');
+    a.classList.remove('digi_img', 'armadura');
+    a.classList.add('ocultito');
+ }
+ 
+ function armorFa() {
+    var a = document.querySelector('#displayB11');
+    a.classList.remove('digi_img', 'armadura');
+    a.classList.add('ocultito');
  } 
 
 function enseñarB(){
@@ -132,21 +199,28 @@ function enseñarB(){
 function enseñarN(){
     for (const mostreN of mostrarN){
         mostreN.classList.remove('ocultito');
-        mostreN.classList.add('digi_img', 'evoNormal')
+        mostreN.classList.add('digi_img', 'evoNormal');
     }
 }
 
 function enseñarD(){
     for (const mostreD of mostrarD){
         mostreD.classList.remove('ocultito');
-        mostreD.classList.add('digi_img', 'evoOscura')
+        mostreD.classList.add('digi_img', 'evoOscura');
     }
 }
 
 function enseñarA() {
     for (const mostreA of mostrarA){
         mostreA.classList.remove('ocultito');
-        mostreA.classList.add('digi_img', 'evoAlterna')
+        mostreA.classList.add('digi_img', 'evoAlterna');
+    }
+}
+
+function enseñarE() {
+    for (const mostreE of mostrarE){
+        mostreE.classList.remove('ocultito');
+        mostreE.classList.add('digi_img', 'armadura');
     }
 }
 
