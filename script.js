@@ -25,7 +25,73 @@ const digiB9 = document.querySelector('#digiB9')
 const digiB10 = document.querySelector('#digiB10')
 const digiB11 = document.querySelector('#digiB11')
 const intento = document.querySelectorAll('input')
+const mostrar = document.querySelectorAll('.bebes')
+const mostrarN = document.querySelectorAll('.viejos')
 var upload = "";
+
+
+function borrarB() {
+   var a = document.querySelector('#displayBaby');
+   a.classList.remove('digi_img', 'primeraEtapa');
+   a.classList.add('ocultito');
+}
+
+function borrarT() {
+    var a = document.querySelector('#displayBaby2');
+    a.classList.remove('digi_img', 'primeraEtapa');
+    a.classList.add('ocultito');
+ }
+
+ function borrarC() {
+    var a = document.querySelector('#displayDigi');
+    a.classList.remove('digi_img', 'primeraEtapa');
+    a.classList.add('ocultito');
+ }
+ 
+ function borrarA() {
+    var a = document.querySelector('#displayDigi2');
+    a.classList.remove('digi_img', 'evoNormal');
+    a.classList.add('ocultito');
+ }
+
+ function borrarP() {
+    var a = document.querySelector('#displayDigi3');
+    a.classList.remove('digi_img', 'evoNormal');
+    a.classList.add('ocultito');
+ }
+ 
+ function borrarU() {
+    var a = document.querySelector('#displayDigi4');
+    a.classList.remove('digi_img', 'evoNormal');
+    a.classList.add('ocultito');
+ }
+ 
+ function borrarE() {
+    var a = document.querySelector('#displayDigi5');
+    a.classList.remove('digi_img', 'evoNormal');
+    a.classList.add('ocultito');
+ } 
+
+function enseñarB(){
+    for (const mostre of mostrar) {
+        mostre.classList.remove('ocultito');
+        mostre.classList.add('digi_img', 'primeraEtapa');
+    }
+}
+
+function enseñarN(){
+    for (const mostreN of mostrarN){
+        mostreN.classList.remove('ocultito');
+        mostreN.classList.add('digi_img', 'evoNormal')
+    }
+}
+
+function enseñarD(){
+    for (const mostreD of mostrarD){
+        monstreD.classList.remove('ocultito');
+        mostreD.classList.add('digi_img', 'evoOscura')
+    }
+}
 
 function oscuridad() {
     var cambio = document.body;

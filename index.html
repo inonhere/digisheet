@@ -28,9 +28,15 @@
     <input type="file" id="digi">
 </div>
 <div class="digisplay">
-    <div class="digi_img primeraEtapa" id="displayBaby">Fresh</div>
-    <div class="digi_img primeraEtapa" id="displayBaby2">In-Training</div>
-    <div class="digi_img primeraEtapa" id="displayDigi">Child</div>
+    <div class="digi_img primeraEtapa bebes" id="displayBaby">Fresh
+        <button onclick="borrarB()" id="equis">X</button>
+    </div>
+    <div class="digi_img primeraEtapa bebes" id="displayBaby2">In-Training
+        <button onclick="borrarT()" id="equis">X</button>
+    </div>
+    <div class="digi_img primeraEtapa bebes" id="displayDigi">Child
+        <button onclick="borrarC()" id="equis">X</button>
+    </div>
 </div>
 <div class="container">
     <h1 class="normalEvo">Normal Evolutions</h1>
@@ -42,10 +48,18 @@
     <input type="file" id="digi5">
 </div>
     <div class="digisplay">
-        <div class="digi_img evoNormal" id="displayDigi2">Adult</div>
-        <div class="digi_img evoNormal" id="displayDigi3">Perfect</div>
-        <div class="digi_img evoNormal" id="displayDigi4">Ultimate</div>
-        <div class="digi_img evoNormal" id="displayDigi5">Extra</div>
+        <div class="digi_img evoNormal viejos" id="displayDigi2">Adult
+            <button onclick="borrarA()" id="equis">X</button>
+        </div>
+        <div class="digi_img evoNormal viejos" id="displayDigi3">Perfect
+            <button onclick="borrarP()" id="equis">X</botton>
+        </div>
+        <div class="digi_img evoNormal viejos" id="displayDigi4">Ultimate
+            <button onclick="borrarU()" id="equis">X</button>
+        </div>
+        <div class="digi_img evoNormal viejos" id="displayDigi5">Extra
+            <button onclick="borrarE()" id="equis">X</button>
+        </div>
     </div>
 </div>
 <div class="container">
@@ -58,10 +72,10 @@
     <input type="file" id="digiD4">
 </div>
 <div class="digisplay">
-    <div class="digi_img evoOscura" id="displayDDigi">Adult</div>
-    <div class="digi_img evoOscura" id="displayDDigi2">Perfect</div>
-    <div class="digi_img evoOscura" id="displayDDigi3">Ultimate</div>
-    <div class="digi_img evoOscura" id="displayDDigi4">Extra</div>
+    <div class="digi_img evoOscura oscurito" id="displayDDigi">Adult</div>
+    <div class="digi_img evoOscura oscurito" id="displayDDigi2">Perfect</div>
+    <div class="digi_img evoOscura oscurito" id="displayDDigi3">Ultimate</div>
+    <div class="digi_img evoOscura oscurito" id="displayDDigi4">Extra</div>
 </div>
 <div class="container">
     <h1 class="alterEvo">Altered Evolutions</h1>
@@ -115,6 +129,8 @@
     <button onclick="oscuridad()">Dark Mode/Light Mode</button>
     <button onclick="intentoDeOcultar()">Hide Buttons</button>
     <button onclick="intentoDeMostrar()">Show Buttons</button>
+    <button onclick="enseñarB()">Show First Stages Row</button>
+    <button onclick="enseñarN()">Show Normal Evolutions Row</button>
 </div>
 </body>
 
