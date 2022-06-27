@@ -76,6 +76,9 @@
 #equis{
     height: 37px;
 }
+.equisB {
+    display: none;
+}
 .primeraEtapa {
     border: 4px solid gray;
 }

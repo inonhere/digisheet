@@ -155,16 +155,18 @@ function oscuridad() {
     cambio.classList.toggle("dark-mode");
 }
 
+function ocultacion() {
+    var cambio = document.querySelectorAll('.equis');
+for (const cambios of cambio)
+    cambios.classList.toggle("equisB");
+}
+
+
 function intentoDeOcultar() {
 for (const intent of intento) {
-    intent.classList.add('ocultito')
+    intent.classList.toggle('ocultito');
 }}
 
-function intentoDeMostrar() {
-    for (const intenti of intento) {
-        intenti.classList.remove('ocultito')
-    }
-}
 
 baby.addEventListener('change', function(){
     const lectura = new FileReader();
