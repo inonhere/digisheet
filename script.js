@@ -261,6 +261,11 @@ function ocultarArmor(){
     cambio.classList.toggle('ocultito')
 }
 
+function ocultarPri(){
+    var cambio = document.querySelector('.firstStage');
+    cambio.classList.toggle('ocultito')
+}
+
 baby.addEventListener('change', function(){
     const lectura = new FileReader();
     lectura.addEventListener('load', ()  =>{
