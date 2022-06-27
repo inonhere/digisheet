@@ -72,10 +72,18 @@
     <input type="file" id="digiD4">
 </div>
 <div class="digisplay">
-    <div class="digi_img evoOscura oscurito" id="displayDDigi">Adult</div>
-    <div class="digi_img evoOscura oscurito" id="displayDDigi2">Perfect</div>
-    <div class="digi_img evoOscura oscurito" id="displayDDigi3">Ultimate</div>
-    <div class="digi_img evoOscura oscurito" id="displayDDigi4">Extra</div>
+    <div class="digi_img evoOscura oscurito" id="displayDDigi">Adult
+        <button onclick="borrarAD()" id="equis">X</button>
+    </div>
+    <div class="digi_img evoOscura oscurito" id="displayDDigi2">Perfect
+        <button onclick="borrarPD()" id="equis">X</button>
+    </div>
+    <div class="digi_img evoOscura oscurito" id="displayDDigi3">Ultimate
+        <button onclick="borrarUD()" id="equis">X</button>
+    </div>
+    <div class="digi_img evoOscura oscurito" id="displayDDigi4">Extra
+        <button onclick="borrarED()" id="equis">X</button>
+    </div>
 </div>
 <div class="container">
     <h1 class="alterEvo">Altered Evolutions</h1>
@@ -87,10 +95,18 @@
     <input type="file" id="digiA4">
 </div>
 <div class="digisplay">
-    <div class="digi_img evoAlterna" id="displayADigi">Adult</div>
-    <div class="digi_img evoAlterna" id="displayADigi2">Perfect</div>
-    <div class="digi_img evoAlterna" id="displayADigi3">Ultimate</div>
-    <div class="digi_img evoAlterna" id="displayADigi4">Extra</div>
+    <div class="digi_img evoAlterna alterado" id="displayADigi">Adult
+        <button onclick="borrarAA()" id="equis">X</button>
+    </div>
+    <div class="digi_img evoAlterna alterado" id="displayADigi2">Perfect
+        <button onclick="borrarAP()" id="equis">X</button>
+    </div>
+    <div class="digi_img evoAlterna alterado" id="displayADigi3">Ultimate
+        <button onclick="borrarAU()" id="equis">X</button>
+    </div>
+    <div class="digi_img evoAlterna alterado" id="displayADigi4">Extra
+        <button onclick="borrarAE()" id="equis">X</button>
+    </div>
 </div>
 <div class="container">
     <h1 class="armorEvo">Armor/Emblem Evolutions</h1>
@@ -103,11 +119,11 @@
     <input type="file" id="digiB5">
 </div>
 <div class="digisplay">
-    <div class="digi_img coraje" id="displayB">Courage</div>
-    <div class="digi_img amistad" id="displayB2">Friendship</div>
-    <div class="digi_img amor" id="displayB3">Love</div>
-    <div class="digi_img pureza" id="displayB4">Purity</div>
-    <div class="digi_img conocimiento" id="displayB5">Knowledge</div>
+    <div class="digi_img coraje armadura" id="displayB">Courage</div>
+    <div class="digi_img amistad armadura" id="displayB2">Friendship</div>
+    <div class="digi_img amor armadura" id="displayB3">Love</div>
+    <div class="digi_img pureza armadura" id="displayB4">Purity</div>
+    <div class="digi_img conocimiento armadura" id="displayB5">Knowledge</div>
 </div>
 <div class="container">
     <input type="file" id="digiB6">
@@ -115,15 +131,15 @@
     <input type ="file" id="digiB8">
     <input type ="file" id="digiB9">
     <input type ="file" id="digiB10">
-    <input type="file" id="digiB11">
+    <input type="file" id="digiB11"> 
 </div>
 <div class="digisplay">
-    <div class="digi_img sinceridad" id="displayB6">Sincerity</div>
-    <div class="digi_img esperanza" id="displayB7">Hope</div>
-    <div class="digi_img luz" id="displayB8">Light</div>
-    <div class="digi_img solidaridad" id="displayB9">Kindness</div>
-    <div class="digi_img milagros" id="displayB10">Miracles</div>
-    <div class="digi_img destino" id="displayB11">Fate</div>
+    <div class="digi_img sinceridad armadura" id="displayB6">Sincerity</div>
+    <div class="digi_img esperanza armadura" id="displayB7">Hope</div>
+    <div class="digi_img luz armadura" id="displayB8">Light</div>
+    <div class="digi_img solidaridad armadura" id="displayB9">Kindness</div>
+    <div class="digi_img milagros armadura" id="displayB10">Miracles</div>
+    <div class="digi_img destino armadura" id="displayB11">Fate</div>
 </div>
 <div class="container">
     <button onclick="oscuridad()">Dark Mode/Light Mode</button>
@@ -131,6 +147,8 @@
     <button onclick="intentoDeMostrar()">Show Buttons</button>
     <button onclick="enseñarB()">Show First Stages Row</button>
     <button onclick="enseñarN()">Show Normal Evolutions Row</button>
+    <button onclick="enseñarD()">Show Dark Evolutions Row</button>
+    <button onclick="enseñarA()">Show Altered Evolutions Row</button>
 </div>
 </body>
 

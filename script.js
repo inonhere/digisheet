@@ -1,5 +1,5 @@
-const baby = document.querySelector('#baby')
-const baby2 = document.querySelector('#baby2')
+const baby = document.querySelector('#baby');
+const baby2 = document.querySelector('#baby2');
 const digi = document.querySelector('#digi');
 const digi2 = document.querySelector('#digi2');
 const digi3 = document.querySelector('#digi3');
@@ -10,23 +10,25 @@ const digiD2 = document.querySelector('#digiD2');
 const digiD3 = document.querySelector('#digiD3');
 const digiD4 = document.querySelector('#digiD4');
 const digiA = document.querySelector('#digiA');
-const digiA2 = document.querySelector('#digiA2')
-const digiA3 = document.querySelector('#digiA3')
-const digiA4 = document.querySelector('#digiA4')
-const digiB = document.querySelector('#digiB')
-const digiB2 = document.querySelector('#digiB2')
-const digiB3 = document.querySelector('#digiB3')
-const digiB4 = document.querySelector('#digiB4')
-const digiB5 = document.querySelector('#digiB5')
-const digiB6 = document.querySelector('#digiB6')
-const digiB7 = document.querySelector('#digiB7')
-const digiB8 = document.querySelector('#digiB8')
-const digiB9 = document.querySelector('#digiB9')
-const digiB10 = document.querySelector('#digiB10')
-const digiB11 = document.querySelector('#digiB11')
-const intento = document.querySelectorAll('input')
-const mostrar = document.querySelectorAll('.bebes')
-const mostrarN = document.querySelectorAll('.viejos')
+const digiA2 = document.querySelector('#digiA2');
+const digiA3 = document.querySelector('#digiA3');
+const digiA4 = document.querySelector('#digiA4');
+const digiB = document.querySelector('#digiB');
+const digiB2 = document.querySelector('#digiB2');
+const digiB3 = document.querySelector('#digiB3');
+const digiB4 = document.querySelector('#digiB4');
+const digiB5 = document.querySelector('#digiB5');
+const digiB6 = document.querySelector('#digiB6');
+const digiB7 = document.querySelector('#digiB7');
+const digiB8 = document.querySelector('#digiB8');
+const digiB9 = document.querySelector('#digiB9');
+const digiB10 = document.querySelector('#digiB10');
+const digiB11 = document.querySelector('#digiB11');
+const intento = document.querySelectorAll('input');
+const mostrar = document.querySelectorAll('.bebes');
+const mostrarN = document.querySelectorAll('.viejos');
+const mostrarD = document.querySelectorAll('.oscurito');
+const mostrarA = document.querySelectorAll('.alterado');
 var upload = "";
 
 
@@ -72,6 +74,54 @@ function borrarT() {
     a.classList.add('ocultito');
  } 
 
+ function borrarAD() {
+    var a = document.querySelector('#displayDDigi');
+    a.classList.remove('digi_img', 'evoOscura');
+    a.classList.add('ocultito');
+ }
+ 
+ function borrarPD() {
+    var a = document.querySelector('#displayDDigi2');
+    a.classList.remove('digi_img', 'evoOscura');
+    a.classList.add('ocultito');
+ }
+ 
+ function borrarUD() {
+    var a = document.querySelector('#displayDDigi3');
+    a.classList.remove('digi_img', 'evoOscura');
+    a.classList.add('ocultito');
+ }
+ 
+ function borrarED() {
+    var a = document.querySelector('#displayDDigi4');
+    a.classList.remove('digi_img', 'evoOscura');
+    a.classList.add('ocultito');
+ }
+ 
+ function borrarAA() {
+    var a = document.querySelector('#displayADigi');
+    a.classList.remove('digi_img', 'evoAlterna');
+    a.classList.add('ocultito');
+ }
+ 
+ function borrarAP() {
+    var a = document.querySelector('#displayADigi2');
+    a.classList.remove('digi_img', 'evoAlterna');
+    a.classList.add('ocultito');
+ }
+ 
+ function borrarAU() {
+    var a = document.querySelector('#displayADigi3');
+    a.classList.remove('digi_img', 'evoAlterna');
+    a.classList.add('ocultito');
+ } 
+
+ function borrarAE() {
+    var a = document.querySelector('#displayADigi4');
+    a.classList.remove('digi_img', 'evoAlterna');
+    a.classList.add('ocultito');
+ } 
+
 function enseñarB(){
     for (const mostre of mostrar) {
         mostre.classList.remove('ocultito');
@@ -88,8 +138,15 @@ function enseñarN(){
 
 function enseñarD(){
     for (const mostreD of mostrarD){
-        monstreD.classList.remove('ocultito');
+        mostreD.classList.remove('ocultito');
         mostreD.classList.add('digi_img', 'evoOscura')
+    }
+}
+
+function enseñarA() {
+    for (const mostreA of mostrarA){
+        mostreA.classList.remove('ocultito');
+        mostreA.classList.add('digi_img', 'evoAlterna')
     }
 }
 
